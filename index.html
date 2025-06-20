@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Glauber | Desenvolvedor Front-End</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    * {margin: 0; padding: 0; box-sizing: border-box;}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #0f172a;
@@ -50,7 +54,8 @@
       border-bottom: 2px solid #38bdf8;
       display: inline-block;
     }
-    .skills, .services {
+    .skills,
+    .services {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
@@ -82,7 +87,8 @@
     .portfolio .link-btn:hover {
       background-color: #0ea5e9;
     }
-    .contact a {
+    .contact a,
+    .contact button {
       display: inline-block;
       background-color: #38bdf8;
       color: #0f172a;
@@ -91,8 +97,13 @@
       text-decoration: none;
       margin: 5px;
       transition: background 0.3s;
+      border: none;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
     }
-    .contact a:hover {
+    .contact a:hover,
+    .contact button:hover {
       background-color: #0ea5e9;
     }
     footer {
@@ -105,73 +116,171 @@
   </style>
 </head>
 <body>
+  <header>
+    <h1>Glauber Silva</h1>
+    <p>Desenvolvedor Front-End | Freelancer</p>
+  </header>
 
-<header>
-  <h1>Glauber Silva</h1>
-  <p>Desenvolvedor Front-End | Freelancer</p>
-</header>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-<nav>
-  <a href="#sobre">Sobre</a>
-  <a href="#skills">Habilidades</a>
-  <a href="#portfolio">Portfólio</a>
-  <a href="#servicos">Serviços</a>
-  <a href="#contato">Contato</a>
-</nav>
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>
+      Sou desenvolvedor front-end, apaixonado por criar sites bonitos, rápidos e responsivos.
+      Trabalho com HTML, CSS e JavaScript, criando soluções modernas para empresas, profissionais
+      e projetos pessoais. Estou sempre evoluindo e buscando entregar o melhor para meus clientes.
+    </p>
+  </section>
 
-<section id="sobre">
-  <h2>Sobre Mim</h2>
-  <p>Sou desenvolvedor front-end, apaixonado por criar sites bonitos, rápidos e responsivos. Trabalho com HTML, CSS e JavaScript, criando soluções modernas para empresas, profissionais e projetos pessoais. Estou sempre evoluindo e buscando entregar o melhor para meus clientes.</p>
-</section>
-
-<section id="skills">
-  <h2>Habilidades</h2>
-  <div class="skills">
-    <div class="card">HTML5</div>
-    <div class="card">CSS3</div>
-    <div class="card">JavaScript</div>
-    <div class="card">Sites Responsivos</div>
-    <div class="card">Otimização de Sites</div>
-    <div class="card">Publicação na Web</div>
-  </div>
-</section>
-
-<section id="portfolio">
-  <h2>Portfólio</h2>
-  <div class="portfolio">
-    <div class="card">
-      <p><strong>Projeto 1:</strong> Landing page para loja de carros.</p>
-      <a class="link-btn" href="https://drogth.github.io/Autoprime/" target="_blank">Acessar Projeto</a>
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <div class="card">HTML5</div>
+      <div class="card">CSS3</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Sites Responsivos</div>
+      <div class="card">Otimização de Sites</div>
+      <div class="card">Publicação na Web</div>
     </div>
-    <div class="card">
-      <p><strong>Projeto 2:</strong> Currículo Online.</p>
-      <a class="link-btn" href="https://drogth.github.io/Curriculo-online/" target="_blank">Acessar Projeto</a>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+    <div class="portfolio">
+      <div class="card">
+        <p><strong>Projeto 1:</strong> Landing page para loja de carros.</p>
+        <a class="link-btn" href="https://drogth.github.io/Autoprime/" target="_blank" rel="noopener">Acessar Projeto</a>
+      </div>
+      <div class="card">
+        <p><strong>Projeto 2:</strong> Currículo Online.</p>
+        <a class="link-btn" href="https://drogth.github.io/Curriculo-online/" target="_blank" rel="noopener">Acessar Projeto</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="servicos">
-  <h2>Serviços</h2>
-  <div class="services">
-    <div class="card">Criação de Sites</div>
-    <div class="card">Landing Pages</div>
-    <div class="card">Ajustes e Manutenção</div>
-    <div class="card">Otimização de Performance</div>
-  </div>
-</section>
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="services">
+      <div class="card">Criação de Sites</div>
+      <div class="card">Landing Pages</div>
+      <div class="card">Ajustes e Manutenção</div>
+      <div class="card">Otimização de Performance</div>
+    </div>
+  </section>
 
-<section id="contato">
-  <h2>Contato</h2>
-  <div class="contact">
-    <a href="https://wa.me/5524992029547" target="_blank">WhatsApp</a>
-    <a href="mailto:s.bim123321@gmail.com">Email</a>
-    <a href="#" download>Baixar Currículo PDF</a>
-  </div>
-</section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="contact">
+      <a href="https://wa.me/5524992029547" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:s.bim123321@gmail.com">Email</a>
 
-<footer>
-  © 2025 Glauber Silva | Desenvolvedor Front-End
-</footer>
+      <!-- Botão para gerar PDF -->
+      <button id="btnDownloadPDF">Baixar Currículo PDF</button>
+    </div>
+  </section>
 
+  <footer>© 2025 Glauber Silva | Desenvolvedor Front-End</footer>
+
+  <!-- Importando jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    const { jsPDF } = window.jspdf;
+
+    document.getElementById('btnDownloadPDF').addEventListener('click', () => {
+      const doc = new jsPDF();
+
+      let y = 10;
+      const lineHeight = 10;
+
+      // Título
+      doc.setFontSize(22);
+      doc.text("Glauber Silva - Currículo Front-End", 10, y);
+      y += 15;
+
+      doc.setFontSize(14);
+      // Sobre Mim
+      doc.setTextColor(56, 223, 248);
+      doc.text("Sobre Mim", 10, y);
+      y += lineHeight;
+
+      doc.setTextColor(0, 0, 0);
+      const sobreTexto = "Sou desenvolvedor front-end, apaixonado por criar sites bonitos, rápidos e responsivos. Trabalho com HTML, CSS e JavaScript, criando soluções modernas para empresas, profissionais e projetos pessoais. Estou sempre evoluindo e buscando entregar o melhor para meus clientes.";
+      y = addMultiLineText(doc, sobreTexto, 10, y, 180, lineHeight);
+
+      y += 5;
+      // Habilidades
+      doc.setTextColor(56, 223, 248);
+      doc.text("Habilidades", 10, y);
+      y += lineHeight;
+
+      doc.setTextColor(0, 0, 0);
+      const habilidades = [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Sites Responsivos",
+        "Otimização de Sites",
+        "Publicação na Web",
+      ];
+      habilidades.forEach(h => {
+        doc.text("- " + h, 15, y);
+        y += lineHeight;
+      });
+
+      y += 5;
+      // Portfólio
+      doc.setTextColor(56, 223, 248);
+      doc.text("Portfólio", 10, y);
+      y += lineHeight;
+
+      doc.setTextColor(0, 0, 0);
+      doc.text("Projeto 1: Landing page para loja de carros.", 15, y);
+      y += lineHeight;
+      doc.text("Link: https://drogth.github.io/Autoprime/", 15, y);
+      y += lineHeight;
+
+      doc.text("Projeto 2: Currículo Online.", 15, y);
+      y += lineHeight;
+      doc.text("Link: https://drogth.github.io/Curriculo-online/", 15, y);
+      y += lineHeight;
+
+      y += 5;
+      // Serviços
+      doc.setTextColor(56, 223, 248);
+      doc.text("Serviços", 10, y);
+      y += lineHeight;
+
+      doc.setTextColor(0, 0, 0);
+      const servicos = [
+        "Criação de Sites",
+        "Landing Pages",
+        "Ajustes e Manutenção",
+        "Otimização de Performance",
+      ];
+      servicos.forEach(s => {
+        doc.text("- " + s, 15, y);
+        y += lineHeight;
+      });
+
+      // Finaliza o PDF
+      doc.save("curriculo-glauber-silva.pdf");
+    });
+
+    // Função auxiliar para texto que quebra linha automaticamente
+    function addMultiLineText(doc, text, x, y, maxWidth, lineHeight) {
+      const splitText = doc.splitTextToSize(text, maxWidth);
+      splitText.forEach(line => {
+        doc.text(line, x, y);
+        y += lineHeight;
+      });
+      return y;
+    }
+  </script>
 </body>
 </html>
