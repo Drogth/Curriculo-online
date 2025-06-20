@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glauber | Desenvolvedor Front-End</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1e293b;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #38bdf8;
+    }
+    nav {
+      background-color: #0f172a;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #f8fafc;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      margin-bottom: 20px;
+      color: #38bdf8;
+      border-bottom: 2px solid #38bdf8;
+      display: inline-block;
+    }
+    .skills, .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background-color: #1e293b;
+      padding: 20px;
+      flex: 1 1 250px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .portfolio img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .contact a {
+      display: inline-block;
+      background-color: #38bdf8;
+      color: #0f172a;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 5px;
+      transition: background 0.3s;
+    }
+    .contact a:hover {
+      background-color: #0ea5e9;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e293b;
+      margin-top: 40px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Glauber Silva</h1>
+  <p>Desenvolvedor Front-End | Freelancer</p>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#skills">Habilidades</a>
+  <a href="#portfolio">Portfólio</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<section id="sobre">
+  <h2>Sobre Mim</h2>
+  <p>Sou desenvolvedor front-end, apaixonado por criar sites bonitos, rápidos e responsivos. Trabalho com HTML, CSS e JavaScript, criando soluções modernas para empresas, profissionais e projetos pessoais. Estou sempre evoluindo e buscando entregar o melhor para meus clientes.</p>
+</section>
+
+<section id="skills">
+  <h2>Habilidades</h2>
+  <div class="skills">
+    <div class="card">HTML5</div>
+    <div class="card">CSS3</div>
+    <div class="card">JavaScript</div>
+    <div class="card">Sites Responsivos</div>
+    <div class="card">Otimização de Sites</div>
+    <div class="card">Publicação na Web</div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2>Portfólio</h2>
+  <div class="portfolio">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200.png?text=Projeto+1" alt="Projeto 1">
+      <p><strong>Projeto 1:</strong> Landing page para loja de carros.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200.png?text=Projeto+2" alt="Projeto 2">
+      <p><strong>Projeto 2:</strong> Portfólio pessoal responsivo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+  <div class="services">
+    <div class="card">Criação de Sites</div>
+    <div class="card">Landing Pages</div>
+    <div class="card">Ajustes e Manutenção</div>
+    <div class="card">Otimização de Performance</div>
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <div class="contact">
+    <a href="https://wa.me/5524992029547" target="_blank">WhatsApp</a>
+    <a href="mailto:s.bim123321@gmail.com">Email</a>
+    <a href="#" download>Baixar Currículo PDF</a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Glauber Silva | Desenvolvedor Front-End
+</footer>
+
+</body>
+</html>
